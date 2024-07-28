@@ -74,22 +74,25 @@ function Chat() {
           </div>
         ))}
       </div>
-      <div className="flex">
+      <div className="flex flex-row items-center">
         <input
-          className="flex-grow shadow appearance-none border rounded-3xl py-2 px-3 text-gray-700 font-[Roboto] font-[500] leading-tight focus:outline-none focus:shadow-outline"
+          className="flex-grow shadow appearance-none border rounded-3xl py-4 px-3 text-gray-700 font-[Roboto] font-[500] leading-tight focus:outline-none focus:shadow-outline"
           type="text"
           placeholder="Type your message..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyPress={(e) => e.key === "Enter" && sendMessage()}
         />
+        <div>
         <button
-          className="ml-4 bg-[#C1F5ED] hover:bg-blue-700 text-[#4e574ae6] font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="ml-4 bg-[#C1F5ED] text-[#4e574ae6] hover:bg-[#45de34] hover:text-[white] font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           onClick={sendMessage}
           disabled={isLoading}
         >
           {isLoading ? 'Sending...' : 'Send'}
         </button>
+        </div>
+       
       </div>
     </div>
   );

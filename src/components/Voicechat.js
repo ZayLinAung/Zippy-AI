@@ -86,11 +86,11 @@ function VoiceChat() {
 
   return (
     <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-xl">
-      <h2 className="text-3xl font-bold mb-6 text-center text-blue-600">Talk to Zippy</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center text-[#3ec8b3]">Talk to Zippy</h2>
       <div className="space-y-4">
         <button
           className={`w-full py-3 px-6 rounded-full font-bold text-white transition-colors ${
-            isListening ? 'bg-red-500 hover:bg-red-600' : 'bg-blue-500 hover:bg-blue-600'
+            isListening ? 'bg-red-500 hover:bg-red-600' : 'bg-[#3ec8b3] hover:bg-[#31b09d]'
           }`}
           onClick={isListening ? stopTalking : startTalking}
           disabled={isSpeaking || isLoading}
