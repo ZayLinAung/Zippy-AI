@@ -8,16 +8,16 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-100">
-        <nav className="bg-blue-600 p-4">
-          <ul className="flex justify-center space-x-4">
+        <nav className="bg-myBg p-4">
+          <ul className="flex justify-center gap-[50px] space-x-4">
             <li>
-              <Link to="/voice-chat" className="text-white hover:text-blue-200">Voice Chat</Link>
+              <Link to="/voice-chat" className="text-white font-[Roboto] font-[500] hover:text-blue-200">Voice Chat</Link>
             </li>
             <li>
-              <Link to="/text-chat" className="text-white hover:text-blue-200">Text Chat</Link>
+              <Link to="/text-chat" className="text-white font-[Roboto] font-[500] hover:text-blue-200">Text Chat</Link>
             </li>
             <li>
-              <Link to="/learning-resources" className="text-white hover:text-blue-200">Learning Resources</Link>
+              <Link to="/learning-resources" className="text-white font-[Roboto] font-[500] hover:text-blue-200">Learning Resources</Link>
             </li>
           </ul>
         </nav>

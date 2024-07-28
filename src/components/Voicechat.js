@@ -86,7 +86,7 @@ function VoiceChat() {
 
   return (
     <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-xl">
-      <h2 className="text-3xl font-bold mb-6 text-center text-blue-600">Talk to AI Coach</h2>
+      <h2 className="text-3xl font-bold mb-6 text-center text-blue-600">Talk to Zippy</h2>
       <div className="space-y-4">
         <button
           className={`w-full py-3 px-6 rounded-full font-bold text-white transition-colors ${
@@ -110,7 +110,7 @@ function VoiceChat() {
       </div>
       <div className="mt-8 space-y-4">
         {chatHistory.map((msg, index) => (
-          <div key={index} className={`p-3 rounded-lg ${msg.user === 'You' ? 'bg-blue-100 text-right' : 'bg-gray-100'}`}>
+          <div key={index} className={`p-3 rounded-lg ${msg.user === 'You' ? 'bg-[#C1F5ED] text-right' : 'bg-gray-100'}`}>
             <span className="font-bold">{msg.user}: </span>
             {msg.text}
           </div>
