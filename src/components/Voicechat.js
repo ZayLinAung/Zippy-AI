@@ -85,11 +85,11 @@ function VoiceChat() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-xl">
+    <div className="max-w-[1000px] mx-auto mt-10 p-6 bg-white rounded-lg shadow-xl">
       <h2 className="text-3xl font-bold mb-6 text-center text-[#3ec8b3]">Talk to Zippy</h2>
-      <div className="space-y-4">
+      <div className="space-y-4 flex flex-col justify-center items-center">
         <button
-          className={`w-full py-3 px-6 rounded-full font-bold text-white transition-colors ${
+          className={`w-[500px] py-3 px-6 rounded-full font-bold text-white transition-colors ${
             isListening ? 'bg-red-500 hover:bg-red-600' : 'bg-[#3ec8b3] hover:bg-[#31b09d]'
           }`}
           onClick={isListening ? stopTalking : startTalking}
@@ -100,7 +100,7 @@ function VoiceChat() {
         {transcript && <p className="text-gray-700">You said: {transcript}</p>}
         {isSpeaking && (
           <button
-            className="w-full py-3 px-6 rounded-full font-bold text-white bg-yellow-500 hover:bg-yellow-600 transition-colors"
+            className=" py-3 px-6 rounded-full font-bold text-white bg-yellow-500 hover:bg-yellow-600 transition-colors"
             onClick={interruptSpeech}
           >
             Interrupt
